@@ -1,0 +1,556 @@
+export interface Translations {
+  nav: {
+    home: string;
+    services: string;
+    about: string;
+    plans: string;
+    creativeProcess: string;
+    contact: string;
+    language: string;
+  };
+  hero: {
+    agency: string;
+    title: string;
+    description: string;
+    subtitle: string;
+  };
+  brand: {
+    title: string;
+    subtitle: string;
+    boldText: string;
+    ideas: {
+      title: string;
+      description: string;
+    };
+    adaptability: {
+      title: string;
+      description: string;
+    };
+    clients: {
+      title: string;
+      description: string;
+    };
+  };
+  services: {
+    title: string;
+    subtitle: string;
+    strategy: {
+      title: string;
+      items: string[];
+    };
+    advertising: {
+      title: string;
+      items: string[];
+    };
+    transformation: {
+      title: string;
+      items: string[];
+    };
+    development: {
+      title: string;
+      items: string[];
+    };
+    description: string;
+    tagline: string;
+    digitalPresence: {
+      title: string;
+      description: string;
+      cta: string;
+    };
+    stats: {
+      growth: string;
+      loyalty: string;
+    };
+  };
+  innovation: {
+    title: string;
+    description: string;
+    cta: string;
+  };
+  plans: {
+    title: string;
+    subtitle: string;
+    local: {
+      title: string;
+      features: string[];
+      cta: string;
+    };
+    global: {
+      title: string;
+      features: string[];
+      cta: string;
+    };
+    leadership: {
+      title: string;
+      features: string[];
+      cta: string;
+    };
+  };
+  additionalServices: {
+    title: string;
+    consulting: string;
+    socialMedia: {
+      title: string;
+    };
+    webDesign: {
+      title: string;
+    };
+    communication: {
+      title: string;
+    };
+    audiovisual: {
+      title: string;
+    };
+    chatbot: {
+      title: string;
+    };
+    ecommerce: {
+      title: string;
+    };
+    production: {
+      title: string;
+    };
+    branding: {
+      title: string;
+    };
+    techDescription: string;
+    techTitle: string;
+    techCta: string;
+  };
+  intelligence: {
+    title: string;
+    subtitle: string;
+    description: string;
+    cta: string;
+  };
+  focus: {
+    title: string;
+    subtitle: string;
+    cta: string;
+    growing: {
+      title: string;
+      cta: string;
+    };
+    innovative: {
+      title: string;
+      cta: string;
+    };
+    premium: {
+      title: string;
+      cta: string;
+    };
+    diverse: {
+      title: string;
+      cta: string;
+    };
+  };
+  newsletter: {
+    title: string;
+    subtitle: string;
+    description: string;
+    placeholder: string;
+    button: string;
+  };
+  footer: {
+    description: string;
+    navigation: string;
+    support: string;
+    copyright: string;
+    company: string;
+  };
+}
+
+export const translations: Record<'en' | 'es', Translations> = {
+  en: {
+    nav: {
+      home: 'Home',
+      services: 'Services',
+      about: 'About Us',
+      plans: 'Plans',
+      creativeProcess: 'Creative Process',
+      contact: 'Contact',
+      language: 'Español'
+    },
+    hero: {
+      agency: 'Imagen Glocal Agency',
+      title: 'We Are the Bridge Between Global and Local',
+      description: 'We believe every brand deserves a strategy as unique as the market it aims to reach. We\'re passionate about creating ideas that transcend boundaries and adapt with authenticity—because we know local success isn\'t just possible; it\'s our purpose.',
+      subtitle: 'We transform ideas into experiences that make a difference.'
+    },
+    brand: {
+      title: 'We Shape Your Brand',
+      subtitle: 'Together, we make ideas transcend borders.',
+      boldText: 'Brands that Inspire and Connect',
+      ideas: {
+        title: 'Ideas',
+        description: 'An agency that transforms strategies into unique opportunities for every brand.'
+      },
+      adaptability: {
+        title: 'Adaptability',
+        description: 'We translate the ever-changing digital world into tangible growth for your business.'
+      },
+      clients: {
+        title: 'More Clients',
+        description: 'Your presence becomes fresh, consistent, and strategically positioned to convert opportunities into sales.'
+      }
+    },
+    services: {
+      title: 'We Connect the World with Your Brand',
+      subtitle: 'Imagen Glocal',
+      strategy: {
+        title: 'Strategy & Creativity',
+        items: [
+          'Creative Campaigns',
+          'Social Media Management',
+          'Digital Content',
+          'Video Production'
+        ]
+      },
+      advertising: {
+        title: 'Advertising & Positioning',
+        items: [
+          'Search Engine Advertising',
+          'Social Media Advertising',
+          'Web Positioning (SEO)',
+          'Online Reputation Management'
+        ]
+      },
+      transformation: {
+        title: 'Digital Transformation & Sales',
+        items: [
+          'Digital Transformation Consulting',
+          'Digital Tools: CRM & ERP',
+          'Artificial Intelligence in Business'
+        ]
+      },
+      development: {
+        title: 'Development & E-Commerce',
+        items: [
+          'Web Design & Hosting',
+          'App Development',
+          'E-Commerce Solutions'
+        ]
+      },
+      description: 'We Are Your Digital Marketing Agency – Change Is Constant, and We Evolve With You.',
+      tagline: 'Innovation, adaptability, disruption, and personalization. We\'re an agency that doesn\'t just follow trends – we reinvent them for each client.',
+      digitalPresence: {
+        title: 'High-Level Digital Presence',
+        description: 'We take your projects to the next level. With Artificial Intelligence, gain profound insights into your customers\' habits.',
+        cta: 'Elevate Your Business with AI'
+      },
+      stats: {
+        growth: 'Estimated Growth',
+        loyalty: 'Brand Loyalty'
+      }
+    },
+    innovation: {
+      title: 'Local Innovation with a Global Perspective',
+      description: 'We are an agency that blends strategy, creativity, and adaptability to connect brands with their audience—both locally and globally. We connect ideas, people, and markets through innovative strategies that merge global trends with local needs. With a disruptive mindset, we help brands stand out, create impact, and build meaningful connections in a constantly evolving world.',
+      cta: 'Transform Your Brand with High-Impact Strategies'
+    },
+    plans: {
+      title: 'Our Plans',
+      subtitle: 'When standard services aren\'t enough, we offer fully customized solutions tailored to the specific needs of your business.',
+      local: {
+        title: 'Local Connection',
+        features: [
+          'Social Media Management',
+          'Creative Campaigns',
+          'SEO Web Positioning',
+          'Social Media Advertising (SMA)'
+        ],
+        cta: 'Ideal'
+      },
+      global: {
+        title: 'Global Impact',
+        features: [
+          'Glocal Brand Consulting and Strategy',
+          'Personalized Digital Content',
+          'Digital Transformation',
+          'Search Engine Advertising (SEA/SEM)',
+          'Social Selling'
+        ],
+        cta: 'Perfect'
+      },
+      leadership: {
+        title: 'Digital Leadership',
+        features: [
+          'Complete Social Media Management',
+          'Creative Campaigns and Social Media Advertising (SMA/SEA)',
+          'SEO Web Positioning',
+          'Digital Events and Webinars',
+          'Glocal Brand Consulting and Strategy'
+        ],
+        cta: 'Complete Solution'
+      }
+    },
+    additionalServices: {
+      title: 'At Your Disposal',
+      consulting: 'Consulting',
+      socialMedia: {
+        title: 'Boost Your Brand on Social Media'
+      },
+      webDesign: {
+        title: 'Web Design and Development'
+      },
+      communication: {
+        title: 'Communication Strategy and Management'
+      },
+      audiovisual: {
+        title: 'Audiovisual Production: Telling Your Story with Impact'
+      },
+      chatbot: {
+        title: 'Advanced AI Chatbot Service'
+      },
+      ecommerce: {
+        title: 'E-Commerce Solutions'
+      },
+      production: {
+        title: 'Professional Commercial and Podcast Production'
+      },
+      branding: {
+        title: 'Elevate Your Image with Customized Branding'
+      },
+      techDescription: 'By integrating artificial intelligence and innovative solutions, we deliver personalized services that optimize your digital strategy, enhance your customer experience, and maximize your brand\'s impact.',
+      techTitle: 'Elevate Your Brand with Cutting-Edge Technology',
+      techCta: 'Discover Our Tech-Driven Approach'
+    },
+    intelligence: {
+      title: 'Information Analysis and Strategic Intelligence Consulting',
+      subtitle: 'Strategic Intelligence: The Foundation for Brilliant Decisions',
+      description: 'We provide advanced information analysis services to help you understand the media landscape and your brand\'s perception in the market. Through our network of experts, we deliver data analysis, trend reports, and communication consulting to empower informed, strategic decisions—tailored to the local and global needs of your brand.',
+      cta: 'Discover Our Impact'
+    },
+    focus: {
+      title: 'Our Focus:',
+      subtitle: 'From SMEs to large corporations, we have the perfect solution to propel your brand.',
+      cta: 'Our Solutions',
+      growing: {
+        title: 'Growing Businesses (SMEs)',
+        cta: 'Drive Your Business Forward'
+      },
+      innovative: {
+        title: 'Innovative Brands',
+        cta: 'Transform Your Strategy'
+      },
+      premium: {
+        title: 'Premium and Established Companies',
+        cta: 'Stand Out with Distinctive Impact'
+      },
+      diverse: {
+        title: 'Diverse Projects',
+        cta: 'Connect Authentically with Your Audience'
+      }
+    },
+    newsletter: {
+      title: 'Sign Up for Free!',
+      subtitle: 'Transforming the Business Landscape',
+      description: 'Subscribe to our Glocal Newsletter and stay at the forefront with key trends and strategies shaping the future of business.',
+      placeholder: 'Enter your email',
+      button: 'Subscribe'
+    },
+    footer: {
+      description: 'We are your strategic partner in driving your brand\'s digital evolution.',
+      navigation: 'Navigation',
+      support: 'Support',
+      copyright: 'Copyright © 2025. All rights reserved.',
+      company: 'Web Design Agency of Imagen Glocal'
+    }
+  },
+  es: {
+    nav: {
+      home: 'Inicio',
+      services: 'Servicios',
+      about: 'Nosotros',
+      plans: 'Planes',
+      creativeProcess: 'Proceso Creativo',
+      contact: 'Contacto',
+      language: 'English'
+    },
+    hero: {
+      agency: 'Agencia Imagen Glocal',
+      title: 'Somos el puente entre lo Global y lo Local',
+      description: 'Creemos que cada marca merece una estrategia tan única como el mercado al que se dirige. Nos apasiona crear ideas que rompan fronteras y se adapten con autenticidad, porque sabemos que el éxito local no es solo posible: es nuestro propósito.',
+      subtitle: 'Transformamos ideas en experiencias que marcan la diferencia'
+    },
+    brand: {
+      title: 'Ideamos tu Marca',
+      subtitle: 'Juntos, logramos que las ideas trasciendan fronteras',
+      boldText: 'Marcas que inspiran y conectan',
+      ideas: {
+        title: 'Ideas',
+        description: 'Una agencia que convierte estrategias en oportunidades únicas para cada marca.'
+      },
+      adaptability: {
+        title: 'Adaptabilidad',
+        description: 'Transformamos el cambiante mundo digital a tu negocio.'
+      },
+      clients: {
+        title: 'Más Clientes',
+        description: 'Tu presencia se vuelve fresca, constante y lista para convertir oportunidades en ventas.'
+      }
+    },
+    services: {
+      title: 'Conectamos al Mundo con tu Marca',
+      subtitle: 'Imagen Glocal',
+      strategy: {
+        title: 'Estrategia y Creatividad',
+        items: [
+          'Campañas Creativas',
+          'Gestión de Redes Sociales',
+          'Contenido Digital',
+          'Producción de Video'
+        ]
+      },
+      advertising: {
+        title: 'Publicidad y Posicionamiento',
+        items: [
+          'Publicidad en Buscadores',
+          'Publicidad en Redes Sociales',
+          'Posicionamiento Web',
+          'Online Reputation Management'
+        ]
+      },
+      transformation: {
+        title: 'Transformación y Ventas Digitales',
+        items: [
+          'Transformación Digital: Consultoría',
+          'Herramientas Digitales: CRM-ERP',
+          'Inteligencia Artificial en los Negocios'
+        ]
+      },
+      development: {
+        title: 'Desarrollo y Comercio Electrónico',
+        items: [
+          'Diseño Web y Hosting',
+          'Desarrollo de Apps',
+          'Comercio Electrónico'
+        ]
+      },
+      description: 'Somos tu agencia de marketing digital, el cambio es constante, y nosotros lo hacemos contigo.',
+      tagline: 'Innovación, adaptación, disrupción, y personalización. Somos una agencia que no solo sigue tendencias, sino que las reinventa para cada cliente.',
+      digitalPresence: {
+        title: 'Presencia Digital de Alto Nivel',
+        description: 'Llevamos tus proyectos a otro nivel, con Inteligencia Artificial, conoce los hábitos de tus clientes.',
+        cta: 'Eleva tu negocio con IA'
+      },
+      stats: {
+        growth: 'Crecimiento estimado',
+        loyalty: 'Fidelización de marca'
+      }
+    },
+    innovation: {
+      title: 'Innovación Local con un enfoque Global',
+      description: 'Somos una agencia que combina estrategia, creatividad y adaptabilidad para conectar marcas con su audiencia a nivel local y global. Conectamos ideas, personas y mercados con estrategias innovadoras que fusionan tendencias globales y necesidades locales. Con un enfoque disruptivo, ayudamos a las marcas a destacar, generar impacto y crear conexiones significativas en un mundo en constante evolución.',
+      cta: 'Transforma tu marca con estrategias de impacto'
+    },
+    plans: {
+      title: 'Nuestros Planes',
+      subtitle: 'Cuando los servicios estándar no son suficientes, ofrecemos una solución completamente personalizada, adaptada a las necesidades específicas de tu empresa.',
+      local: {
+        title: 'Conexión Local',
+        features: [
+          'Gestión de Redes Sociales',
+          'Campañas Creativas',
+          'Posicionamiento Web SEO',
+          'Publicidad en Redes Sociales SMA'
+        ],
+        cta: 'Ideal'
+      },
+      global: {
+        title: 'Impacto Global',
+        features: [
+          'Consultoría de Marca y Estrategia Glocal',
+          'Contenido Digital Personalizado',
+          'Transformación Digital',
+          'Publicidad en Buscadores SEA/SEM',
+          'Social Selling'
+        ],
+        cta: 'Perfecto'
+      },
+      leadership: {
+        title: 'Liderazgo Digital',
+        features: [
+          'Gestión Completa de Redes Sociales',
+          'Campañas Creativas y de Publicidad en Redes Sociales SMA/SEA',
+          'Posicionamiento Web SEO',
+          'Eventos Digitales y Webinars',
+          'Consultoría de Marca y Estrategia Glocal'
+        ],
+        cta: 'Completo'
+      }
+    },
+    additionalServices: {
+      title: 'A tu disposición',
+      consulting: 'Asesoría',
+      socialMedia: {
+        title: 'Potencia tu Marca en Redes Sociales'
+      },
+      webDesign: {
+        title: 'Diseño y Desarrollo de Páginas Web'
+      },
+      communication: {
+        title: 'Estrategia y Gestión de Comunicación'
+      },
+      audiovisual: {
+        title: 'Producción Audiovisual: Contamos tu Historia con Impacto'
+      },
+      chatbot: {
+        title: 'Servicio de Chatbot con IA Avanzada'
+      },
+      ecommerce: {
+        title: 'E-Commerce'
+      },
+      production: {
+        title: 'Producción de Comerciales y Podcasts Profesionales'
+      },
+      branding: {
+        title: 'Impulsa tu Imagen con branding Personalizados'
+      },
+      techDescription: 'Integrando inteligencia artificial y soluciones innovadoras, ofrecemos servicios personalizados que optimizan tu estrategia digital, mejoran la experiencia de tus clientes y maximizan el impacto de tu marca.',
+      techTitle: 'Potencia Tu Marca con Tecnología de Vanguardia',
+      techCta: 'Descubre Nuestro Enfoque Tecnológico'
+    },
+    intelligence: {
+      title: 'Análisis Informativo y Consultoría de Información Estratégica',
+      subtitle: 'Información Estratégica para Decisiones Inteligentes',
+      description: 'Proporcionamos un servicio de análisis informativo avanzado para ayudarte a entender el contexto mediático y la percepción de tu marca en el mercado. A través de nuestra red de expertos, brindamos análisis de datos, informes de tendencias y asesoría en comunicación que te permiten tomar decisiones informadas y estratégicas, adaptadas a las necesidades locales y globales de tu marca.',
+      cta: 'Mira Nuestro Impacto'
+    },
+    focus: {
+      title: 'Nos dirigimos a',
+      subtitle: 'Desde PyMEs hasta grandes corporaciones, tenemos la solución perfecta para catapultar tu marca.',
+      cta: 'Conoce Nuestras Soluciones',
+      growing: {
+        title: 'Empresas en Crecimiento (PyMEs)',
+        cta: 'Impulsa tu negocio'
+      },
+      innovative: {
+        title: 'Marcas Innovadoras',
+        cta: 'Transforma tu estrategia'
+      },
+      premium: {
+        title: 'Empresas Premium y Consolidadas',
+        cta: 'Destaca con impacto'
+      },
+      diverse: {
+        title: 'Proyectos Diversos',
+        cta: 'Conéctate con tu audiencia'
+      }
+    },
+    newsletter: {
+      title: '¡Inscríbete Gratis!',
+      subtitle: 'Transformando el panorama empresarial.',
+      description: 'Suscríbete a nuestro Newsletter Glocal y mantente a la vanguardia con las tendencias y estrategias clave que están moldeando el futuro de los negocios.',
+      placeholder: 'Ingresa tu correo electrónico',
+      button: 'Suscribirse'
+    },
+    footer: {
+      description: 'Somos tu socio estratégico para impulsar la evolución digital de tu marca.',
+      navigation: 'Navegación',
+      support: 'Soporte',
+      copyright: 'Copyright © 2025. All rights reserved.',
+      company: 'Agencia de Diseño Web de Imagen Glocal'
+    }
+  }
+};
