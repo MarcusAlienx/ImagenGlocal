@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef, ReactNode } from "react"
+import { useRef, type ReactNode } from "react"
 
 interface ParallaxContainerProps {
   children: ReactNode
@@ -80,7 +80,7 @@ export function FloatingElement({
       transition={{
         duration,
         delay,
-        repeat: Infinity,
+        repeat: Number.POSITIVE_INFINITY,
         ease: "easeInOut"
       }}
       className={className}
