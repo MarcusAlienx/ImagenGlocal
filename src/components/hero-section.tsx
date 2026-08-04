@@ -9,7 +9,7 @@ export function HeroSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-primary overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-primary overflow-hidden pt-20 md:pt-0">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
@@ -82,7 +82,7 @@ export function HeroSection() {
           >
             <ParallaxContainer speed={0.3} direction="up" className="relative">
               <Image
-                src="https://ext.same-assets.com/4272769446/237523159.jpeg"
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
                 alt="Team collaboration"
                 width={600}
                 height={800}

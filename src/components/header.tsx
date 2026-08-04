@@ -36,10 +36,10 @@ export function Header() {
                   ? "/logo-dark.png"
                   : "/logo-light.png"
               }
-              alt="Imagen Glocal"
+              alt="Conexión Glocal"
               width={150}
               height={51}
-              className="h-8 w-auto"
+              className="h-8 w-auto header-logo"
             />
           </Link>
 

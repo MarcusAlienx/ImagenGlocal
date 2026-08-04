@@ -172,7 +172,7 @@ export const translations: Record<'en' | 'es', Translations> = {
       language: 'Español'
     },
     hero: {
-      agency: 'Imagen Glocal Agency',
+      agency: 'Conexión Glocal Agency',
       title: 'We Are the Bridge Between Global and Local',
       description: 'We believe every brand deserves a strategy as unique as the market it aims to reach. We\'re passionate about creating ideas that transcend boundaries and adapt with authenticity—because we know local success isn\'t just possible; it\'s our purpose.',
       subtitle: 'We transform ideas into experiences that make a difference.'
@@ -196,7 +196,7 @@ export const translations: Record<'en' | 'es', Translations> = {
     },
     services: {
       title: 'We Connect the World with Your Brand',
-      subtitle: 'Imagen Glocal',
+      subtitle: 'Conexión Glocal',
       strategy: {
         title: 'Strategy & Creativity',
         items: [
@@ -354,7 +354,7 @@ export const translations: Record<'en' | 'es', Translations> = {
       navigation: 'Navigation',
       support: 'Support',
       copyright: 'Copyright © 2025. All rights reserved.',
-      company: 'Web Design Agency of Imagen Glocal'
+      company: 'Web Design Agency of Conexión Glocal'
     }
   },
   es: {
@@ -368,7 +368,7 @@ export const translations: Record<'en' | 'es', Translations> = {
       language: 'English'
     },
     hero: {
-      agency: 'Agencia Imagen Glocal',
+      agency: 'Agencia Conexión Glocal',
       title: 'Somos el puente entre lo Global y lo Local',
       description: 'Creemos que cada marca merece una estrategia tan única como el mercado al que se dirige. Nos apasiona crear ideas que rompan fronteras y se adapten con autenticidad, porque sabemos que el éxito local no es solo posible: es nuestro propósito.',
       subtitle: 'Transformamos ideas en experiencias que marcan la diferencia'
@@ -392,7 +392,7 @@ export const translations: Record<'en' | 'es', Translations> = {
     },
     services: {
       title: 'Conectamos al Mundo con tu Marca',
-      subtitle: 'Imagen Glocal',
+      subtitle: 'Conexión Glocal',
       strategy: {
         title: 'Estrategia y Creatividad',
         items: [
@@ -405,24 +405,24 @@ export const translations: Record<'en' | 'es', Translations> = {
       advertising: {
         title: 'Publicidad y Posicionamiento',
         items: [
-          'Publicidad en Buscadores',
-          'Publicidad en Redes Sociales',
-          'Posicionamiento Web',
+          'Publicidad SEA/SEM',
+          'Publicidad SMA',
+          'SEO',
           'Online Reputation Management'
         ]
       },
       transformation: {
-        title: 'Transformación y Ventas Digitales',
+        title: 'Transformación Digital',
         items: [
-          'Transformación Digital: Consultoría',
-          'Herramientas Digitales: CRM-ERP',
-          'Inteligencia Artificial en los Negocios'
+          'Consultoría',
+          'CRM/ERP',
+          'Inteligencia Artificial en Negocios'
         ]
       },
       development: {
         title: 'Desarrollo y Comercio Electrónico',
         items: [
-          'Diseño Web y Hosting',
+          'Diseño Web & Hosting',
           'Desarrollo de Apps',
           'Comercio Electrónico'
         ]
@@ -452,8 +452,8 @@ export const translations: Record<'en' | 'es', Translations> = {
         features: [
           'Gestión de Redes Sociales',
           'Campañas Creativas',
-          'Posicionamiento Web SEO',
-          'Publicidad en Redes Sociales SMA'
+          'SEO',
+          'Publicidad SMA'
         ],
         cta: 'Ideal'
       },
@@ -463,7 +463,7 @@ export const translations: Record<'en' | 'es', Translations> = {
           'Consultoría de Marca y Estrategia Glocal',
           'Contenido Digital Personalizado',
           'Transformación Digital',
-          'Publicidad en Buscadores SEA/SEM',
+          'Publicidad SEA/SEM',
           'Social Selling'
         ],
         cta: 'Perfecto'
@@ -472,8 +472,8 @@ export const translations: Record<'en' | 'es', Translations> = {
         title: 'Liderazgo Digital',
         features: [
           'Gestión Completa de Redes Sociales',
-          'Campañas Creativas y de Publicidad en Redes Sociales SMA/SEA',
-          'Posicionamiento Web SEO',
+          'Campañas Creativas y de Publicidad SMA/SEA',
+          'SEO',
           'Eventos Digitales y Webinars',
           'Consultoría de Marca y Estrategia Glocal'
         ],
@@ -550,7 +550,7 @@ export const translations: Record<'en' | 'es', Translations> = {
       navigation: 'Navegación',
       support: 'Soporte',
       copyright: 'Copyright © 2025. All rights reserved.',
-      company: 'Agencia de Diseño Web de Imagen Glocal'
+      company: 'Agencia de Diseño Web de Conexión Glocal'
     }
   }
 };
