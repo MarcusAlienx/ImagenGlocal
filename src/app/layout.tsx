@@ -26,10 +26,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <link rel="icon" href="/favicon.ico" />
-
-
-
 
       </head>
       <body suppressHydrationWarning className="font-poppins antialiased">
