@@ -15,7 +15,7 @@ export interface SEOConfig {
 
 export const seoConfig: Record<'es' | 'en', SEOConfig> = {
   es: {
-    title: 'Imagen Glocal - Agencia de Marketing Digital | Imagen Global, Poder Local',
+    title: 'Conexión Glocal - Agencia de Marketing Digital | Imagen Global, Poder Local',
     description: 'Somos el puente entre lo Global y lo Local. Agencia de marketing digital que transforma ideas en experiencias que marcan la diferencia. Servicios de SEO, Redes Sociales, Desarrollo Web y más.',
     keywords: [
       'agencia marketing digital',
@@ -32,15 +32,15 @@ export const seoConfig: Record<'es' | 'en', SEOConfig> = {
       'marketing local',
       'estrategia digital'
     ],
-    ogTitle: 'Imagen Glocal - Transformamos tu marca con estrategias digitales innovadoras',
+    ogTitle: 'Conexión Glocal - Transformamos tu marca con estrategias digitales innovadoras',
     ogDescription: 'Agencia de marketing digital especializada en conectar marcas con audiencias locales y globales. Estrategias personalizadas que generan resultados.',
     ogImage: 'https://imagen-glocal.com/og-image-es.jpg',
-    twitterTitle: 'Imagen Glocal - Agencia de Marketing Digital',
+    twitterTitle: 'Conexión Glocal - Agencia de Marketing Digital',
     twitterDescription: 'Transformamos ideas en experiencias digitales que marcan la diferencia',
     language: 'es'
   },
   en: {
-    title: 'Imagen Glocal - Digital Marketing Agency | Global Image, Local Power',
+    title: 'Conexión Glocal - Digital Marketing Agency | Global Image, Local Power',
     description: 'We are the bridge between Global and Local. Digital marketing agency that transforms ideas into experiences that make a difference. SEO, Social Media, Web Development services and more.',
     keywords: [
       'digital marketing agency',
@@ -57,10 +57,10 @@ export const seoConfig: Record<'es' | 'en', SEOConfig> = {
       'local marketing',
       'digital strategy'
     ],
-    ogTitle: 'Imagen Glocal - Transform your brand with innovative digital strategies',
+    ogTitle: 'Conexión Glocal - Transform your brand with innovative digital strategies',
     ogDescription: 'Digital marketing agency specialized in connecting brands with local and global audiences. Personalized strategies that generate results.',
     ogImage: 'https://imagen-glocal.com/og-image-en.jpg',
-    twitterTitle: 'Imagen Glocal - Digital Marketing Agency',
+    twitterTitle: 'Conexión Glocal - Digital Marketing Agency',
     twitterDescription: 'We transform ideas into digital experiences that make a difference',
     language: 'en'
   }
@@ -75,9 +75,9 @@ export function generateSEOMetadata(language: 'es' | 'en' = 'es', page?: string)
     title: pageTitle,
     description: config.description,
     keywords: config.keywords.join(', '),
-    authors: [{ name: 'Imagen Glocal' }],
-    creator: 'Imagen Glocal',
-    publisher: 'Imagen Glocal',
+    authors: [{ name: 'Conexión Glocal' }],
+    creator: 'Conexión Glocal',
+    publisher: 'Conexión Glocal',
     formatDetection: {
       email: false,
       address: false,
@@ -95,7 +95,7 @@ export function generateSEOMetadata(language: 'es' | 'en' = 'es', page?: string)
       title: config.ogTitle || pageTitle,
       description: config.ogDescription || config.description,
       url: `https://imagen-glocal.com${page ? `/${page}` : ''}`,
-      siteName: 'Imagen Glocal',
+      siteName: 'Conexión Glocal',
       images: [
         {
           url: config.ogImage || 'https://imagen-glocal.com/og-image-default.jpg',
@@ -138,8 +138,8 @@ export function generateSEOMetadata(language: 'es' | 'en' = 'es', page?: string)
 export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Imagen Glocal',
-  alternateName: 'Imagen Glocal Agency',
+  name: 'Conexión Glocal',
+  alternateName: 'Conexión Glocal Agency',
   url: 'https://imagen-glocal.com',
   logo: 'https://imagen-glocal.com/logo.png',
   description: 'Agencia de marketing digital especializada en estrategias glocales',

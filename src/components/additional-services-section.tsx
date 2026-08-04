@@ -13,42 +13,42 @@ export function AdditionalServicesSection() {
   const services = [
     {
       title: t.additionalServices.socialMedia.title,
-      image: "https://ext.same-assets.com/4272769446/2058064714.png",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
       description: "Potenciamos tu marca en todas las plataformas digitales con estrategias creativas y contenido que conecta.",
     },
     {
       title: t.additionalServices.webDesign.title,
-      image: "https://ext.same-assets.com/4272769446/3880356279.png",
+      image: "https://images.unsplash.com/photo-1547658719-da2b51159128?w=800&q=80",
       description: "Diseñamos experiencias web que convierten visitantes en clientes con tecnología de vanguardia.",
     },
     {
       title: t.additionalServices.communication.title,
-      image: "https://ext.same-assets.com/4272769446/2838483477.png",
+      image: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80",
       description: "Desarrollamos estrategias de comunicación integral que amplifican tu mensaje y fortalecen tu marca.",
     },
     {
       title: t.additionalServices.audiovisual.title,
-      image: "https://ext.same-assets.com/4272769446/4291736334.png",
+      image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80",
       description: "Creamos contenido audiovisual de alta calidad que cuenta tu historia de manera impactante.",
     },
     {
       title: t.additionalServices.chatbot.title,
-      image: "https://ext.same-assets.com/2746524643/3039304126.jpeg",
+      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
       description: "Automatización inteligente con IA para mejorar la experiencia de tus clientes 24/7.",
     },
     {
       title: t.additionalServices.ecommerce.title,
-      image: "https://ext.same-assets.com/2746524643/3195783688.jpeg",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       description: "Soluciones completas de comercio electrónico que maximizan tus ventas online.",
     },
     {
       title: t.additionalServices.production.title,
-      image: "https://ext.same-assets.com/2746524643/870499112.jpeg",
+      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
       description: "Producción profesional de comerciales y podcasts que elevan tu presencia mediática.",
     },
     {
       title: t.additionalServices.branding.title,
-      image: "https://ext.same-assets.com/2746524643/3652059870.jpeg",
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
       description: "Desarrollamos identidades de marca memorables que conectan emocionalmente con tu audiencia.",
     },
   ]

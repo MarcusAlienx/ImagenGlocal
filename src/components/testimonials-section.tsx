@@ -16,7 +16,7 @@ export function TestimonialsSection() {
       position: "CEO, TechStart",
       company: "Startup Tecnológica",
       image: "https://images.unsplash.com/photo-1494790108755-2616c7d58b1c?w=150&h=150&fit=crop&crop=face",
-      quote: "Imagen Glocal transformó completamente nuestra presencia digital. En 6 meses aumentamos nuestras ventas en un 300% y posicionamos nuestra marca como líder en el sector.",
+      quote: "Conexión Glocal transformó completamente nuestra presencia digital. En 6 meses aumentamos nuestras ventas en un 300% y posicionamos nuestra marca como líder en el sector.",
       rating: 5,
       results: {
         metric: "300%",
@@ -28,7 +28,7 @@ export function TestimonialsSection() {
       position: "Director de Marketing",
       company: "Grupo Comercial del Bajío",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-      quote: "El equipo de Imagen Glocal entiende perfectamente el mercado local y global. Su estrategia de social media nos ayudó a conectar con nuevas audiencias y aumentar el engagement significativamente.",
+      quote: "El equipo de Conexión Glocal entiende perfectamente el mercado local y global. Su estrategia de social media nos ayudó a conectar con nuevas audiencias y aumentar el engagement significativamente.",
       rating: 5,
       results: {
         metric: "450%",
@@ -40,7 +40,7 @@ export function TestimonialsSection() {
       position: "Fundadora",
       company: "EcoVerde Sustentable",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      quote: "Trabajar con Imagen Glocal fue la mejor decisión. No solo crearon una identidad visual increíble, sino que desarrollaron una estrategia integral que nos posicionó como referente en sustentabilidad.",
+      quote: "Trabajar con Conexión Glocal fue la mejor decisión. No solo crearon una identidad visual increíble, sino que desarrollaron una estrategia integral que nos posicionó como referente en sustentabilidad.",
       rating: 5,
       results: {
         metric: "200%",
@@ -151,7 +151,7 @@ export function TestimonialsSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
-          className="grid md:grid-cols-3 gap-8 mb-20"
+          className="testimonials-grid mb-20"
         >
           {testimonials.map((testimonial, index) => (
             <motion.div
@@ -159,7 +159,7 @@ export function TestimonialsSection() {
               variants={itemVariants}
               className="group"
             >
-              <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-background/80 backdrop-blur-sm relative overflow-hidden">
+              <Card className="testimonial-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-background/80 backdrop-blur-sm relative overflow-hidden">
                 {/* Quote icon */}
                 <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20" />
 
@@ -177,13 +177,13 @@ export function TestimonialsSection() {
                   </blockquote>
 
                   {/* Client Info */}
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-4 mb-4 testimonial-user-info">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
                       width={50}
                       height={50}
-                      className="rounded-full"
+                      className="testimonial-avatar"
                     />
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.name}</p>

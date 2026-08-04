@@ -29,7 +29,7 @@ export function ContactSection() {
     await new Promise(resolve => setTimeout(resolve, 1000))
 
     // Create WhatsApp message
-    const whatsappMessage = `¡Hola! Me contacto desde el sitio web de Imagen Glocal.
+    const whatsappMessage = `¡Hola! Me contacto desde el sitio web de Conexión Glocal.
 
 *Datos de contacto:*
 • Nombre: ${formData.name}
@@ -44,7 +44,7 @@ ${formData.message}
 
     // Open WhatsApp with pre-filled message
     const encodedMessage = encodeURIComponent(whatsappMessage)
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=523319627565&text=${encodedMessage}`
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=529989203002&text=${encodedMessage}`
 
     window.open(whatsappUrl, '_blank')
 
@@ -75,19 +75,19 @@ ${formData.message}
     {
       icon: Phone,
       title: "Teléfono",
-      value: "+52 33 1962 7565",
-      link: "tel:+523319627565",
+      value: "+52 998 920 3002",
+      link: "tel:+529989203002",
     },
     {
       icon: Mail,
       title: "Email",
-      value: "contacto@imagen-glocal.com",
-      link: "mailto:contacto@imagen-glocal.com",
+      value: "conexionglocal@gmail.com | gdl@imagen-glocal.com",
+      link: "mailto:conexionglocal@gmail.com",
     },
     {
       icon: MapPin,
       title: "Ubicación",
-      value: "Guadalajara, Jalisco, México",
+      value: "Cancún (HQ) | Guadalajara (Sucursal)",
       link: "https://maps.google.com",
     },
   ]
@@ -320,7 +320,7 @@ ${formData.message}
                   </div>
                   <Button
                     className="w-full bg-white text-primary hover:bg-white/90"
-                    onClick={() => window.open('https://api.whatsapp.com/send?phone=523319627565&text=¡Hola! Me gustaría conocer más sobre sus servicios de marketing digital.', '_blank')}
+                    onClick={() => window.open('https://api.whatsapp.com/send?phone=529989203002&text=¡Hola! Me gustaría conocer más sobre sus servicios de marketing digital.', '_blank')}
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Chatear ahora

@@ -48,6 +48,7 @@ export function Footer() {
     { href: "#", label: "Privacy Policy" },
     { href: "#", label: "FAQ" },
     { href: "#", label: "Terms & Conditions" },
+    { href: "#", label: "Disclaimer" },
   ]
 
   return (
@@ -97,10 +98,10 @@ export function Footer() {
                       ? "/logo-dark.png"
                       : "/logo-light.png"
                   }
-                  alt="Imagen Glocal"
+                  alt="Conexión Glocal"
                   width={200}
                   height={68}
-                  className="h-12 w-auto"
+                  className="h-12 w-auto header-logo"
                 />
               </Link>
 
