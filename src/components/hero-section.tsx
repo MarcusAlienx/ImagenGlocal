@@ -9,7 +9,7 @@ export function HeroSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gradient-primary overflow-hidden pt-20 md:pt-0">
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-primary overflow-hidden pt-32 md:pt-0">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
