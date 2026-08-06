@@ -34,7 +34,7 @@ export const seoConfig: Record<'es' | 'en', SEOConfig> = {
     ],
     ogTitle: 'Conexión Glocal - Transformamos tu marca con estrategias digitales innovadoras',
     ogDescription: 'Agencia de marketing digital especializada en conectar marcas con audiencias locales y globales. Estrategias personalizadas que generan resultados.',
-    ogImage: 'https://imagen-glocal.com/og-image-es.jpg',
+    ogImage: 'https://imagenglocal.netlify.app/og-image-es.jpg',
     twitterTitle: 'Conexión Glocal - Agencia de Marketing Digital',
     twitterDescription: 'Transformamos ideas en experiencias digitales que marcan la diferencia',
     language: 'es'
@@ -59,7 +59,7 @@ export const seoConfig: Record<'es' | 'en', SEOConfig> = {
     ],
     ogTitle: 'Conexión Glocal - Transform your brand with innovative digital strategies',
     ogDescription: 'Digital marketing agency specialized in connecting brands with local and global audiences. Personalized strategies that generate results.',
-    ogImage: 'https://imagen-glocal.com/og-image-en.jpg',
+    ogImage: 'https://imagenglocal.netlify.app/og-image-en.jpg',
     twitterTitle: 'Conexión Glocal - Digital Marketing Agency',
     twitterDescription: 'We transform ideas into digital experiences that make a difference',
     language: 'en'
@@ -83,22 +83,22 @@ export function generateSEOMetadata(language: 'es' | 'en' = 'es', page?: string)
       address: false,
       telephone: false,
     },
-    metadataBase: new URL('https://imagen-glocal.com'),
+    metadataBase: new URL('https://imagenglocal.netlify.app'),
     alternates: {
-      canonical: `https://imagen-glocal.com${page ? `/${page}` : ''}`,
+      canonical: `https://imagenglocal.netlify.app${page ? `/${page}` : ''}`,
       languages: {
-        'es': 'https://imagen-glocal.com',
+        'es': 'https://imagenglocal.netlify.app',
         'en': 'https://paginamuestra.3.isparkcorp.com',
       },
     },
     openGraph: {
       title: config.ogTitle || pageTitle,
       description: config.ogDescription || config.description,
-      url: `https://imagen-glocal.com${page ? `/${page}` : ''}`,
+      url: `https://imagenglocal.netlify.app${page ? `/${page}` : ''}`,
       siteName: 'Conexión Glocal',
       images: [
         {
-          url: config.ogImage || 'https://imagen-glocal.com/og-image-default.jpg',
+          url: config.ogImage || 'https://imagenglocal.netlify.app/og-image-default.jpg',
           width: 1200,
           height: 630,
           alt: config.ogTitle || pageTitle,
@@ -111,7 +111,7 @@ export function generateSEOMetadata(language: 'es' | 'en' = 'es', page?: string)
       card: 'summary_large_image',
       title: config.twitterTitle || pageTitle,
       description: config.twitterDescription || config.description,
-      images: [config.ogImage || 'https://imagen-glocal.com/og-image-default.jpg'],
+      images: [config.ogImage || 'https://imagenglocal.netlify.app/og-image-default.jpg'],
       creator: '@imagenglocal',
       site: '@imagenglocal',
     },
@@ -140,8 +140,8 @@ export const structuredData = {
   '@type': 'Organization',
   name: 'Conexión Glocal',
   alternateName: 'Conexión Glocal Agency',
-  url: 'https://imagen-glocal.com',
-  logo: 'https://imagen-glocal.com/logo.png',
+  url: 'https://imagenglocal.netlify.app',
+  logo: 'https://imagenglocal.netlify.app/logo.png',
   description: 'Agencia de marketing digital especializada en estrategias glocales',
   address: {
     '@type': 'PostalAddress',
