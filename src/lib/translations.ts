@@ -113,6 +113,14 @@ export interface Translations {
     branding: {
       title: string;
     };
+    brandDna: {
+      title: string;
+      description: string;
+    };
+    aiMicroApps: {
+      title: string;
+      description: string;
+    };
     techDescription: string;
     techTitle: string;
     techCta: string;
@@ -150,6 +158,53 @@ export interface Translations {
     description: string;
     placeholder: string;
     button: string;
+  };
+  brandDna: {
+    badge: string;
+    title: string;
+    description: string;
+    formUrlLabel: string;
+    formUrlPlaceholder: string;
+    formNameLabel: string;
+    formNamePlaceholder: string;
+    formContactLabel: string;
+    formContactPlaceholder: string;
+    submitButton: string;
+    loadingMessages: string[];
+    processing: string;
+    successTitle: string;
+    successDescription: string;
+    analyzeAnother: string;
+  };
+  contact: {
+    title: string;
+    subtitle: string;
+    formTitle: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    phoneLabel: string;
+    phonePlaceholder: string;
+    serviceLabel: string;
+    servicePlaceholder: string;
+    messageLabel: string;
+    messagePlaceholder: string;
+    submitButton: string;
+    submitting: string;
+    successTitle: string;
+    successDescription: string;
+    contactInfoTitle: string;
+    whatsappTitle: string;
+    whatsappSubtitle: string;
+    whatsappButton: string;
+    hoursTitle: string;
+    hoursWeekdays: string;
+    hoursSaturday: string;
+    hoursSunday: string;
+    services: string[];
+    locationTitle: string;
+    locationValue: string;
   };
   footer: {
     description: string;
@@ -311,6 +366,14 @@ export const translations: Record<'en' | 'es', Translations> = {
       branding: {
         title: 'Elevate Your Image with Customized Branding'
       },
+      brandDna: {
+        title: 'AI Brand DNA Diagnostics',
+        description: 'We scan your web presence to extract your company\'s visual essence, color palette, typography, and tone of voice. We generate automated campaigns and content with 100% brand consistency.'
+      },
+      aiMicroApps: {
+        title: 'AI Micro-Apps Studio',
+        description: 'We transform complex workflows into smart, no-code micro-apps. Automate customer service, quoting, and internal tools powered by generative models.'
+      },
       techDescription: 'By integrating artificial intelligence and innovative solutions, we deliver personalized services that optimize your digital strategy, enhance your customer experience, and maximize your brand\'s impact.',
       techTitle: 'Elevate Your Brand with Cutting-Edge Technology',
       techCta: 'Discover Our Tech-Driven Approach'
@@ -348,6 +411,66 @@ export const translations: Record<'en' | 'es', Translations> = {
       description: 'Subscribe to our Glocal Newsletter and stay at the forefront with key trends and strategies shaping the future of business.',
       placeholder: 'Enter your email',
       button: 'Subscribe'
+    },
+    brandDna: {
+      badge: 'AI Lead Magnet',
+      title: 'Analyze Your Brand\'s DNA in Real Time',
+      description: 'Enter your website link and our AI engine will analyze your visual identity and tone of voice to send you a free diagnostic.',
+      formUrlLabel: 'Your Website URL',
+      formUrlPlaceholder: 'https://yourcompany.com',
+      formNameLabel: 'Name',
+      formNamePlaceholder: 'Your name',
+      formContactLabel: 'Email / WhatsApp',
+      formContactPlaceholder: 'Email or Phone',
+      submitButton: 'Get Free DNA Diagnostic',
+      loadingMessages: [
+        'Analyzing color palette...',
+        'Evaluating typography...',
+        'Checking tone of voice...',
+        'Extracting visual essence...',
+        'Generating DNA report...'
+      ],
+      processing: 'Processing',
+      successTitle: 'Analysis Completed!',
+      successDescription: 'We have sent the detailed report of your brand\'s DNA to the provided contact',
+      analyzeAnother: 'Analyze another brand'
+    },
+    contact: {
+      title: 'Ready to Transform Your Brand?',
+      subtitle: 'Contact us and discover how we can take your business to the next level with innovative digital strategies.',
+      formTitle: 'Send us a message',
+      nameLabel: 'Full Name *',
+      namePlaceholder: 'Your full name',
+      emailLabel: 'Email *',
+      emailPlaceholder: 'you@email.com',
+      phoneLabel: 'Phone',
+      phonePlaceholder: '+1 xxx xxx xxxx',
+      serviceLabel: 'Service of Interest',
+      servicePlaceholder: 'Select a service',
+      messageLabel: 'Message *',
+      messagePlaceholder: 'Tell us about your project...',
+      submitButton: 'Send Message',
+      submitting: 'Sending...',
+      successTitle: 'Message Sent!',
+      successDescription: 'Your data has been sent to direccion@imagen-glocal.com and we have redirected you to WhatsApp. We will reply shortly.',
+      contactInfoTitle: 'Contact Information',
+      whatsappTitle: 'Prefer WhatsApp?',
+      whatsappSubtitle: 'Immediate response',
+      whatsappButton: 'Chat Now',
+      hoursTitle: 'Business Hours',
+      hoursWeekdays: 'Monday - Friday: 9:00 AM - 6:00 PM',
+      hoursSaturday: 'Saturdays: 10:00 AM - 2:00 PM',
+      hoursSunday: 'Sundays: Closed',
+      services: [
+        'Strategy and Creativity',
+        'Advertising and Positioning',
+        'Digital Transformation',
+        'Web Development and E-Commerce',
+        'Comprehensive Consulting',
+        'Other service'
+      ],
+      locationTitle: 'Location',
+      locationValue: 'Cancún, Quintana Roo (HQ) | Guadalajara, Jalisco (Branch)'
     },
     footer: {
       description: 'We are your strategic partner in driving your brand\'s digital evolution.',
@@ -507,6 +630,14 @@ export const translations: Record<'en' | 'es', Translations> = {
       branding: {
         title: 'Impulsa tu Imagen con branding Personalizados'
       },
+      brandDna: {
+        title: 'Diagnóstico de ADN de Marca con IA',
+        description: 'Escaneamos tu presencia web para extraer la esencia visual, paleta de colores, tipografías y tono de voz de tu empresa. Generamos campañas automatizadas y contenido con 100% de coherencia de marca.'
+      },
+      aiMicroApps: {
+        title: 'Estudio de Micro-Apps de IA',
+        description: 'Transformamos flujos de trabajo complejos en micro-aplicaciones inteligentes sin código. Automatiza atención al cliente, cotizaciones y herramientas internas potenciadas por modelos generativos.'
+      },
       techDescription: 'Integrando inteligencia artificial y soluciones innovadoras, ofrecemos servicios personalizados que optimizan tu estrategia digital, mejoran la experiencia de tus clientes y maximizan el impacto de tu marca.',
       techTitle: 'Potencia Tu Marca con Tecnología de Vanguardia',
       techCta: 'Descubre Nuestro Enfoque Tecnológico'
@@ -544,6 +675,66 @@ export const translations: Record<'en' | 'es', Translations> = {
       description: 'Suscríbete a nuestro Newsletter Glocal y mantente a la vanguardia con las tendencias y estrategias clave que están moldeando el futuro de los negocios.',
       placeholder: 'Ingresa tu correo electrónico',
       button: 'Suscribirse'
+    },
+    brandDna: {
+      badge: 'Lead Magnet IA',
+      title: 'Analiza el ADN de tu Marca en Tiempo Real',
+      description: 'Ingresa el enlace de tu sitio web y nuestro motor de IA analizará tu identidad visual y tono de voz para enviarte un diagnóstico gratuito.',
+      formUrlLabel: 'URL de tu sitio web',
+      formUrlPlaceholder: 'https://tuempresa.com',
+      formNameLabel: 'Nombre',
+      formNamePlaceholder: 'Tu nombre',
+      formContactLabel: 'Correo / WhatsApp',
+      formContactPlaceholder: 'Email o Teléfono',
+      submitButton: 'Obtener Diagnóstico de ADN Gratuito',
+      loadingMessages: [
+        'Analizando paleta de colores...',
+        'Evaluando tipografías...',
+        'Comprobando tono de voz...',
+        'Extrayendo esencia visual...',
+        'Generando reporte de ADN...'
+      ],
+      processing: 'Procesando',
+      successTitle: '¡Análisis Completado!',
+      successDescription: 'Hemos enviado el reporte detallado del ADN de tu marca al contacto proporcionado',
+      analyzeAnother: 'Analizar otra marca'
+    },
+    contact: {
+      title: '¿Listo para transformar tu marca?',
+      subtitle: 'Contáctanos y descubre cómo podemos impulsar tu negocio al siguiente nivel con estrategias digitales innovadoras.',
+      formTitle: 'Envíanos un mensaje',
+      nameLabel: 'Nombre completo *',
+      namePlaceholder: 'Tu nombre completo',
+      emailLabel: 'Email *',
+      emailPlaceholder: 'tu@email.com',
+      phoneLabel: 'Teléfono',
+      phonePlaceholder: '+52 xxx xxx xxxx',
+      serviceLabel: 'Servicio de interés',
+      servicePlaceholder: 'Selecciona un servicio',
+      messageLabel: 'Mensaje *',
+      messagePlaceholder: 'Cuéntanos sobre tu proyecto...',
+      submitButton: 'Enviar mensaje',
+      submitting: 'Enviando...',
+      successTitle: '¡Mensaje enviado!',
+      successDescription: 'Tus datos han sido enviados a direccion@imagen-glocal.com y te hemos redirigido a WhatsApp. Responderemos pronto.',
+      contactInfoTitle: 'Información de contacto',
+      whatsappTitle: '¿Prefieres WhatsApp?',
+      whatsappSubtitle: 'Respuesta inmediata',
+      whatsappButton: 'Chatear ahora',
+      hoursTitle: 'Horarios de atención',
+      hoursWeekdays: 'Lunes - Viernes: 9:00 AM - 6:00 PM',
+      hoursSaturday: 'Sábados: 10:00 AM - 2:00 PM',
+      hoursSunday: 'Domingos: Cerrado',
+      services: [
+        'Estrategia y Creatividad',
+        'Publicidad y Posicionamiento',
+        'Transformación Digital',
+        'Desarrollo Web y E-Commerce',
+        'Consultoría Integral',
+        'Otro servicio'
+      ],
+      locationTitle: 'Ubicación',
+      locationValue: 'Cancún, Quintana Roo (HQ) | Guadalajara, Jalisco (Sucursal)'
     },
     footer: {
       description: 'Somos tu socio estratégico para impulsar la evolución digital de tu marca.',

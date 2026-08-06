@@ -38,8 +38,8 @@ export function Header() {
               }
               alt="Conexión Glocal"
               width={150}
-              height={51}
-              className="h-8 w-auto header-logo"
+              height={52}
+              className="header-logo"
             />
           </Link>
 

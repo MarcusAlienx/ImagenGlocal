@@ -105,8 +105,12 @@ export function Footer() {
                 />
               </Link>
 
-              <p className="text-muted-foreground mb-6 max-w-md">
+              <p className="text-muted-foreground mb-4 max-w-md">
                 {t.footer.description}
+              </p>
+
+              <p className="text-muted-foreground mb-6">
+                <a href="mailto:hola@imagen-glocal.com" className="hover:text-primary transition-colors">hola@imagen-glocal.com</a>
               </p>
 
               {/* Social Links */}

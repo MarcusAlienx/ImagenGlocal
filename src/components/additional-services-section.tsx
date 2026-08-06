@@ -51,6 +51,16 @@ export function AdditionalServicesSection() {
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
       description: "Desarrollamos identidades de marca memorables que conectan emocionalmente con tu audiencia.",
     },
+    {
+      title: t.additionalServices.brandDna.title,
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+      description: t.additionalServices.brandDna.description,
+    },
+    {
+      title: t.additionalServices.aiMicroApps.title,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      description: t.additionalServices.aiMicroApps.description,
+    },
   ]
 
   const containerVariants = {
@@ -96,10 +106,26 @@ export function AdditionalServicesSection() {
             {t.additionalServices.title}
           </motion.h2>
 
-          <motion.div variants={itemVariants} className="mb-8">
+          <motion.div variants={itemVariants} className="mb-8 flex justify-center gap-4">
             <Button
               size="lg"
               className="bg-gradient-primary hover:opacity-90 text-white"
+              onClick={() => {
+                const el = document.getElementById('brand-dna')
+                el?.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
+              <ArrowRight className="w-5 h-5 mr-2" />
+              {t.brandDna.submitButton}
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary/10"
+              onClick={() => {
+                const el = document.getElementById('contact')
+                el?.scrollIntoView({ behavior: 'smooth' })
+              }}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               {t.additionalServices.consulting}
@@ -175,8 +201,12 @@ export function AdditionalServicesSection() {
               variant="outline"
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-white"
+              onClick={() => {
+                const el = document.getElementById('brand-dna')
+                el?.scrollIntoView({ behavior: 'smooth' })
+              }}
             >
-              {t.additionalServices.techCta}
+              {t.brandDna.submitButton}
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>

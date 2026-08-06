@@ -10,6 +10,7 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { ScrollProgress } from "@/components/parallax-container"
+import { BrandDnaSection } from "@/components/brand-dna-section"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <BrandDnaSection />
         <BrandSection />
         <ServicesSection />
         <StatsSection />

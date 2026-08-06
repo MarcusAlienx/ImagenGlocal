@@ -74,32 +74,25 @@ ${formData.message}
   const contactInfo = [
     {
       icon: Phone,
-      title: "Teléfono",
+      title: t.contact.phoneLabel,
       value: "+52 998 920 3002",
       link: "tel:+529989203002",
     },
     {
       icon: Mail,
-      title: "Email",
-      value: "conexionglocal@gmail.com | gdl@imagen-glocal.com",
-      link: "mailto:conexionglocal@gmail.com",
+      title: t.contact.emailLabel.replace(" *", ""),
+      value: "direccion@imagen-glocal.com | gdl@imagen-glocal.com",
+      link: "mailto:direccion@imagen-glocal.com",
     },
     {
       icon: MapPin,
-      title: "Ubicación",
-      value: "Cancún (HQ) | Guadalajara (Sucursal)",
+      title: t.contact.locationTitle || "Location",
+      value: t.contact.locationValue || "Cancún, Quintana Roo (HQ) | Guadalajara, Jalisco (Branch)",
       link: "https://maps.google.com",
     },
   ]
 
-  const services = [
-    "Estrategia y Creatividad",
-    "Publicidad y Posicionamiento",
-    "Transformación Digital",
-    "Desarrollo Web y E-Commerce",
-    "Consultoría Integral",
-    "Otro servicio",
-  ]
+  const services = t.contact.services
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -133,7 +126,7 @@ ${formData.message}
         >
           <motion.div variants={itemVariants} className="mb-4">
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Contacto
+              {t.nav.contact}
             </span>
           </motion.div>
 
@@ -141,14 +134,14 @@ ${formData.message}
             variants={itemVariants}
             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
           >
-            ¿Listo para transformar tu marca?
+            {t.contact.title}
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Contáctanos y descubre cómo podemos impulsar tu negocio al siguiente nivel con estrategias digitales innovadoras.
+            {t.contact.subtitle}
           </motion.p>
         </motion.div>
 
@@ -162,7 +155,7 @@ ${formData.message}
           >
             <Card className="p-8 border-0 shadow-xl bg-background/80 backdrop-blur-sm">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                <h3 className="text-2xl font-bold mb-6">{t.contact.formTitle}</h3>
 
                 {isSubmitted ? (
                   <motion.div
@@ -171,9 +164,9 @@ ${formData.message}
                     className="text-center py-12"
                   >
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                    <h4 className="text-xl font-semibold mb-2">¡Mensaje enviado!</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t.contact.successTitle}</h4>
                     <p className="text-muted-foreground">
-                      Te hemos redirigido a WhatsApp. Responderemos pronto.
+                      {t.contact.successDescription}
                     </p>
                   </motion.div>
                 ) : (
@@ -181,19 +174,19 @@ ${formData.message}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Nombre completo *
+                          {t.contact.nameLabel}
                         </label>
                         <Input
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          placeholder="Tu nombre completo"
+                          placeholder={t.contact.namePlaceholder}
                         />
                       </div>
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Email *
+                          {t.contact.emailLabel}
                         </label>
                         <Input
                           name="email"
@@ -201,7 +194,7 @@ ${formData.message}
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          placeholder="tu@email.com"
+                          placeholder={t.contact.emailPlaceholder}
                         />
                       </div>
                     </div>
@@ -209,18 +202,18 @@ ${formData.message}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Teléfono
+                          {t.contact.phoneLabel}
                         </label>
                         <Input
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+52 xxx xxx xxxx"
+                          placeholder={t.contact.phonePlaceholder}
                         />
                       </div>
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Servicio de interés
+                          {t.contact.serviceLabel}
                         </label>
                         <select
                           name="service"
@@ -228,7 +221,7 @@ ${formData.message}
                           onChange={handleChange}
                           className="w-full p-3 border border-input rounded-md bg-background"
                         >
-                          <option value="">Selecciona un servicio</option>
+                          <option value="">{t.contact.servicePlaceholder}</option>
                           {services.map((service) => (
                             <option key={service} value={service}>
                               {service}
@@ -240,14 +233,14 @@ ${formData.message}
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Mensaje *
+                        {t.contact.messageLabel}
                       </label>
                       <Textarea
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        placeholder="Cuéntanos sobre tu proyecto..."
+                        placeholder={t.contact.messagePlaceholder}
                         rows={5}
                       />
                     </div>
@@ -261,12 +254,12 @@ ${formData.message}
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2" />
-                          Enviando...
+                          {t.contact.submitting}
                         </>
                       ) : (
                         <>
                           <Send className="w-5 h-5 mr-2" />
-                          Enviar mensaje
+                          {t.contact.submitButton}
                         </>
                       )}
                     </Button>
@@ -286,7 +279,7 @@ ${formData.message}
           >
             {/* Contact Information */}
             <div>
-              <h3 className="text-2xl font-bold mb-6">Información de contacto</h3>
+              <h3 className="text-2xl font-bold mb-6">{t.contact.contactInfoTitle}</h3>
               <div className="space-y-4">
                 {contactInfo.map((info) => (
                   <motion.a
@@ -314,8 +307,8 @@ ${formData.message}
                   <div className="flex items-center gap-4 mb-4">
                     <MessageCircle className="w-8 h-8" />
                     <div>
-                      <h4 className="font-bold text-lg">¿Prefieres WhatsApp?</h4>
-                      <p className="text-white/80">Respuesta inmediata</p>
+                      <h4 className="font-bold text-lg">{t.contact.whatsappTitle}</h4>
+                      <p className="text-white/80">{t.contact.whatsappSubtitle}</p>
                     </div>
                   </div>
                   <Button
@@ -323,7 +316,7 @@ ${formData.message}
                     onClick={() => window.open('https://api.whatsapp.com/send?phone=529989203002&text=¡Hola! Me gustaría conocer más sobre sus servicios de marketing digital.', '_blank')}
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    Chatear ahora
+                    {t.contact.whatsappButton}
                   </Button>
                 </CardContent>
               </Card>
@@ -331,11 +324,11 @@ ${formData.message}
 
             {/* Business Hours */}
             <motion.div variants={itemVariants}>
-              <h4 className="font-bold mb-4">Horarios de atención</h4>
+              <h4 className="font-bold mb-4">{t.contact.hoursTitle}</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
-                <p>Sábados: 10:00 AM - 2:00 PM</p>
-                <p>Domingos: Cerrado</p>
+                <p>{t.contact.hoursWeekdays}</p>
+                <p>{t.contact.hoursSaturday}</p>
+                <p>{t.contact.hoursSunday}</p>
               </div>
             </motion.div>
           </motion.div>
