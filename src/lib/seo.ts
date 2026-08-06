@@ -152,7 +152,7 @@ export const structuredData = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+52-33-1962-7565',
+    telephone: '+52-998-920-3002',
     contactType: 'customer service',
     availableLanguage: ['Spanish', 'English'],
   },

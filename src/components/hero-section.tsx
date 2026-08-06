@@ -59,13 +59,21 @@ export function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  const el = document.getElementById('brand-dna')
+                  el?.scrollIntoView({ behavior: 'smooth' })
+                }}
                 className="bg-white text-purple-primary hover:bg-white/90 px-8 py-3 rounded-lg font-semibold transition-all"
               >
-                {t.innovation.cta}
+                {t.brandDna.submitButton}
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                onClick={() => {
+                  const el = document.getElementById('contact')
+                  el?.scrollIntoView({ behavior: 'smooth' })
+                }}
                 className="border-2 border-white text-white hover:bg-white hover:text-purple-primary px-8 py-3 rounded-lg font-semibold transition-all"
               >
                 {t.additionalServices.consulting}
