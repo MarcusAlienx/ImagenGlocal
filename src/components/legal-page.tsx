@@ -19,7 +19,7 @@ export function LegalPage({ title, updated, sections }: { title: string; updated
             </section>
           ))}
         </div>
-        <p className="mt-12 text-sm text-muted-foreground">Contacto: info@imagen-glocal.com · +52 998 920 3002</p>
+        <p className="mt-12 text-sm text-muted-foreground">Contacto: hola@imagen-glocal.com · +52 998 920 3002</p>
       </article>
     </main>
   )

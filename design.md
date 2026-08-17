@@ -80,7 +80,7 @@ La familia principal es Poppins, cargada con `next/font/google`. El layout usa u
 
 ## Conversión y formularios
 
-Netlify detecta los formularios en `public/__forms.html`. Los componentes React publican a `/__forms.html` con `application/x-www-form-urlencoded`, un campo `form-name` y honeypot. Los nombres y campos de los tres formularios deben permanecer sincronizados:
+Netlify detecta los formularios en `public/forms.html`. Los componentes React publican por AJAX a `/` con `application/x-www-form-urlencoded`, un campo `form-name` y honeypot, como requiere Netlify Forms para Next.js Runtime v5. El archivo estático usa una ruta sin prefijo reservado para que el escáner de deploy pueda encontrar las definiciones. Los nombres y campos de los tres formularios deben permanecer sincronizados:
 
 - `brand-dna`: URL, nombre, email, teléfono opcional e idioma.
 - `contact`: nombre, email, teléfono, servicio, mensaje e idioma.
@@ -88,7 +88,7 @@ Netlify detecta los formularios en `public/__forms.html`. Los componentes React 
 
 La interfaz solo muestra éxito después de una respuesta HTTP satisfactoria. Netlify Forms debe estar habilitado en el sitio para que las capturas aparezcan en el panel. WhatsApp es una vía explícita posterior, no una afirmación de que se envió correo.
 
-Las notificaciones deben configurarse en Netlify para enviar las entradas verificadas a `info@imagen-glocal.com`. Los formularios incluyen un campo `email` y asuntos versionados para facilitar respuesta y clasificación. El procedimiento operativo está en `docs/netlify-email.md`.
+Las notificaciones deben configurarse en Netlify para enviar las entradas verificadas a `hola@imagen-glocal.com`. Los formularios incluyen un campo `email` y asuntos versionados para facilitar respuesta y clasificación. El procedimiento operativo está en `docs/netlify-email.md`.
 
 ## Chatbot
 

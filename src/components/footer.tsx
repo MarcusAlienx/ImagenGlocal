@@ -36,7 +36,7 @@ export function Footer() {
   const supportLinks = [
     { href: "/privacy", label: language === "es" ? "Política de privacidad" : "Privacy policy" },
     { href: "/terms", label: language === "es" ? "Términos y condiciones" : "Terms and conditions" },
-    { href: "mailto:info@imagen-glocal.com?subject=Consulta%20desde%20el%20sitio", label: "FAQ" },
+    { href: "mailto:hola@imagen-glocal.com?subject=Consulta%20desde%20el%20sitio", label: "FAQ" },
     { href: pathname === "/" ? "#contact" : "/#contact", label: language === "es" ? "Soporte" : "Support" },
   ]
 
@@ -72,7 +72,7 @@ export function Footer() {
                 {language === "es" ? "Suscripción registrada. Gracias." : "Subscription registered. Thank you."}
               </output>
             ) : (
-              <form name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleNewsletter} className="max-w-md mx-auto">
+              <form name="newsletter" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleNewsletter} className="max-w-md mx-auto">
                 <input type="hidden" name="form-name" value="newsletter" />
                 <input type="hidden" name="subject" data-remove-prefix value="Nueva suscripción — Newsletter Glocal" />
                 <p className="hidden"><label htmlFor="newsletter-bot-field">Do not fill this out</label><input id="newsletter-bot-field" name="bot-field" tabIndex={-1} autoComplete="off" /></p>
@@ -104,7 +104,7 @@ export function Footer() {
                 <Image src="/logo-light.png" alt="" aria-hidden="true" width={187} height={73} className="hidden h-16 w-auto dark:block" />
               </Link>
               <p className="text-muted-foreground mb-4 max-w-md">{t.footer.description}</p>
-              <p className="mb-2 text-muted-foreground"><a href="mailto:info@imagen-glocal.com" className="transition-colors hover:text-primary">info@imagen-glocal.com</a></p>
+              <p className="mb-2 text-muted-foreground"><a href="mailto:hola@imagen-glocal.com" className="transition-colors hover:text-primary">hola@imagen-glocal.com</a></p>
               <p className="mb-6 text-muted-foreground"><a href="https://api.whatsapp.com/send?phone=523319627565&text=Hola%2C%20vengo%20del%20sitio%20de%20Conexi%C3%B3n%20Glocal" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">WhatsApp: +52 33 1962 7565</a></p>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (

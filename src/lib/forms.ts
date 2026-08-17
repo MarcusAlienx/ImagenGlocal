@@ -7,7 +7,7 @@ export async function submitNetlifyForm(
     ...fields,
   })
 
-  const response = await fetch("/__forms.html", {
+  const response = await fetch("/", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",

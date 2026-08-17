@@ -35,52 +35,52 @@ export function AdditionalServicesSection() {
   const services = [
     {
       title: t.additionalServices.socialMedia.title,
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+      image: "/services/social.webp",
       description: descriptions[0],
     },
     {
       title: t.additionalServices.webDesign.title,
-      image: "https://images.unsplash.com/photo-1547658719-da2b51159128?w=800&q=80",
+      image: "/services/web-design.webp",
       description: descriptions[1],
     },
     {
       title: t.additionalServices.communication.title,
-      image: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80",
+      image: "/services/communication.webp",
       description: descriptions[2],
     },
     {
       title: t.additionalServices.audiovisual.title,
-      image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80",
+      image: "/services/audiovisual.webp",
       description: descriptions[3],
     },
     {
       title: t.additionalServices.chatbot.title,
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
+      image: "/services/chatbot.webp",
       description: descriptions[4],
     },
     {
       title: t.additionalServices.ecommerce.title,
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+      image: "/services/ecommerce.webp",
       description: descriptions[5],
     },
     {
       title: t.additionalServices.production.title,
-      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80",
+      image: "/services/production.webp",
       description: descriptions[6],
     },
     {
       title: t.additionalServices.branding.title,
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+      image: "/services/branding.webp",
       description: descriptions[7],
     },
     {
       title: t.additionalServices.brandDna.title,
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+      image: "/services/dna.webp",
       description: t.additionalServices.brandDna.description,
     },
     {
       title: t.additionalServices.aiMicroApps.title,
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      image: "/services/microapps.webp",
       description: t.additionalServices.aiMicroApps.description,
     },
   ]

@@ -75,8 +75,8 @@ export function ContactSection() {
     {
       icon: Mail,
       title: t.contact.emailLabel.replace(" *", ""),
-      value: "info@imagen-glocal.com",
-      link: "mailto:info@imagen-glocal.com",
+      value: "hola@imagen-glocal.com",
+      link: "mailto:hola@imagen-glocal.com",
     },
     {
       icon: MapPin,
@@ -142,7 +142,7 @@ export function ContactSection() {
                     </div>
                   </motion.div>
                 ) : (
-                  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-6">
+                  <form name="contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-6">
                     <input type="hidden" name="form-name" value="contact" />
                     <input type="hidden" name="subject" data-remove-prefix value="Nuevo lead — Formulario de contacto" />
                     <p className="hidden">

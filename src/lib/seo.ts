@@ -153,7 +153,7 @@ export const structuredData = {
     contactType: 'customer service',
     availableLanguage: ['Spanish', 'English'],
   },
-  email: 'info@imagen-glocal.com',
+  email: 'hola@imagen-glocal.com',
   areaServed: ['México', 'Cancún', 'Guadalajara'],
   sameAs: [
     'https://www.facebook.com/share/1E4jzo55sd/',

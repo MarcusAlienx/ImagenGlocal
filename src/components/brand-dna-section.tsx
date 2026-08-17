@@ -60,7 +60,7 @@ export function BrandDnaSection() {
             <CardContent className="p-8 md:p-12">
               <AnimatePresence mode="wait">
                 {status === "idle" && (
-                  <motion.form key="form" name="brand-dna" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, y: -20 }} onSubmit={handleSubmit} className="space-y-6">
+                  <motion.form key="form" name="brand-dna" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, y: -20 }} onSubmit={handleSubmit} className="space-y-6">
                     <input type="hidden" name="form-name" value="brand-dna" />
                     <input type="hidden" name="subject" data-remove-prefix value="Nueva solicitud — Diagnóstico de ADN de Marca" />
                     <p className="hidden"><label htmlFor="brand-dna-bot-field">Do not fill this out</label><input id="brand-dna-bot-field" name="bot-field" tabIndex={-1} autoComplete="off" /></p>
