@@ -1,6 +1,6 @@
-# Notificaciones de formularios a info@imagen-glocal.com
+# Notificaciones de formularios por correo
 
-Los formularios `contact`, `brand-dna` y `newsletter` están implementados con Netlify Forms. El código incluye:
+Los formularios `contact`, `brand-dna`, `newsletter` y `glocal-live-lead` están implementados con Netlify Forms. El último actúa como respaldo de la entrega directa mediante Resend. El código incluye:
 
 - campos `email` para que Netlify pueda establecer `Reply-To`;
 - asuntos específicos por formulario;
@@ -25,10 +25,11 @@ Por defecto, Netlify envía estas notificaciones desde `formresponses@netlify.co
 
 ## Verificación
 
-Después del despliegue deben aparecer tres formularios activos en Netlify:
+Después del despliegue deben aparecer cuatro formularios activos en Netlify:
 
 - `contact`
 - `brand-dna`
 - `newsletter`
+- `glocal-live-lead`
 
 Una prueba completa requiere comprobar tanto la nueva entrada en **Forms** como la llegada del mensaje a `info@imagen-glocal.com`.

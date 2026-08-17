@@ -1,0 +1,17 @@
+import type { Event } from "@/types/glocal";
+
+const venues = {
+  gdl: { id: "venue-gdl", name: "Distrito Glocal", address: "Av. Vallarta 2221", city: "Guadalajara", state: "Jalisco", country: "México", latitude: 20.674, longitude: -103.381, capacity: 1800 },
+  cdmx: { id: "venue-cdmx", name: "Terraza Reforma", address: "Paseo de la Reforma 250", city: "Ciudad de México", state: "CDMX", country: "México", latitude: 19.428, longitude: -99.164, capacity: 650 },
+  mty: { id: "venue-mty", name: "Parque Fundidora", address: "Av. Fundidora 501", city: "Monterrey", state: "Nuevo León", country: "México", latitude: 25.678, longitude: -100.286, capacity: 12000 },
+};
+
+export const demoEvents: Event[] = [
+  { id: "evt-campus-night", slug: "glocal-live-campus-night", name: "Glocal Live Campus Night", description: "Una noche donde nuevos sonidos, comunidad y energía local ocupan el escenario.", shortDescription: "Talento emergente, visuales inmersivos y una noche sin etiquetas.", category: "music", tags: ["Music", "University"], status: "published", startDate: "2026-08-21T20:00:00-06:00", endDate: "2026-08-22T02:00:00-06:00", venue: venues.gdl, city: "Guadalajara", state: "Jalisco", country: "México", heroImage: "gradient-violet", organizerId: "org-glocal", ticketingProvider: "mock", externalEventId: "mock-campus", lineup: [
+    { artist: { id: "artist-luna", name: "Luna Rivas", slug: "luna-rivas", description: "Electropop mexicano" }, stage: "Main Stage", performanceTime: "2026-08-21T21:00:00-06:00", position: 1 },
+    { artist: { id: "artist-norte", name: "Norte 44", slug: "norte-44", description: "Indie electrónico" }, stage: "Main Stage", performanceTime: "2026-08-21T22:30:00-06:00", position: 2 },
+    { artist: { id: "artist-solar", name: "Solaris DJ Set", slug: "solaris", description: "House y sonidos latinos" }, stage: "Club Stage", performanceTime: "2026-08-22T00:00:00-06:00", position: 3 },
+  ] },
+  { id: "evt-rooftop", slug: "glocal-live-rooftop", name: "Glocal Live Rooftop", description: "Una experiencia elevada sobre la ciudad con música, gastronomía y diseño.", shortDescription: "Sunset sessions y gastronomía sobre el skyline de CDMX.", category: "experience", tags: ["Music", "Experience"], status: "published", startDate: "2026-08-22T18:00:00-06:00", endDate: "2026-08-23T01:00:00-06:00", venue: venues.cdmx, city: "Ciudad de México", state: "CDMX", country: "México", heroImage: "gradient-orange", organizerId: "org-glocal", ticketingProvider: "mock", externalEventId: "mock-rooftop", lineup: [{ artist: { id: "artist-marea", name: "Marea", slug: "marea", description: "Organic house" }, stage: "Sunset Deck", performanceTime: "2026-08-22T20:00:00-06:00", position: 1 }] },
+  { id: "evt-festival", slug: "glocal-live-festival", name: "Glocal Live Festival", description: "Dos escenarios, arte urbano y una nueva generación de música en vivo.", shortDescription: "Música, cultura y tecnología a escala festival.", category: "festival", tags: ["Festival"], status: "published", startDate: "2026-09-12T14:00:00-06:00", endDate: "2026-09-13T02:00:00-06:00", venue: venues.mty, city: "Monterrey", state: "Nuevo León", country: "México", heroImage: "gradient-cyan", organizerId: "org-glocal", ticketingProvider: "mock", externalEventId: "mock-festival", lineup: [{ artist: { id: "artist-fuego", name: "Fuego Norte", slug: "fuego-norte", description: "Alt latino" }, stage: "Glocal Stage", performanceTime: "2026-09-12T20:00:00-06:00", position: 1 }] },
+];

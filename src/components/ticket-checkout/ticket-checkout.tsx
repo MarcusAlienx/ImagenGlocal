@@ -1,0 +1,10 @@
+"use client";
+import { CheckCircle2, ExternalLink, ShieldCheck, X } from "lucide-react";
+import type { StructuredUI } from "@/types/glocal";
+type Checkout = Extract<StructuredUI, { type: "checkout" }>;
+export function TicketCheckout({ checkout, onClose }: { checkout: Checkout; onClose: () => void }) {
+  const isMock = checkout.providerId === "mock";
+  const panel = <div className="relative rounded-[2rem] border border-white/10 bg-[#111210] p-6 text-white shadow-2xl"><button type="button" onClick={onClose} aria-label="Cerrar checkout" className="absolute right-5 top-5 rounded-full bg-white/10 p-2"><X size={18} /></button><div className="mb-8 flex size-12 items-center justify-center rounded-2xl bg-lime-300 text-black"><ShieldCheck /></div><p className="text-xs font-bold uppercase tracking-[.2em] text-lime-300">{isMock ? "Proveedor mock" : "Checkout Pro · Mercado Pago"}</p><h3 className="mt-2 text-2xl font-semibold">Confirma tus accesos</h3><p className="mt-1 text-white/50">{checkout.eventName}</p><div className="my-6 rounded-2xl bg-white/[.05] p-4"><div className="flex justify-between"><span>{checkout.quantity} × {checkout.ticketName}</span><span>${checkout.total.toLocaleString("es-MX")} {checkout.currency}</span></div></div><div className="flex gap-2 text-xs text-white/45"><CheckCircle2 className="text-lime-300" size={16} />{isMock ? "Esta pantalla demuestra la entrega al proveedor externo. No captura tarjetas, no genera boletos y no crea códigos QR." : "El pago se completa en Mercado Pago. Glocal Live no recibe ni almacena los datos de tu tarjeta."}</div><a href={checkout.checkoutUrl} className="mt-7 flex w-full items-center justify-center gap-2 rounded-xl bg-lime-300 p-3.5 font-bold text-black">{isMock ? "Continuar checkout simulado" : "Continuar a Mercado Pago"} <ExternalLink size={16} /></a></div>;
+  if (checkout.checkoutMode === "embedded") return panel;
+  return <dialog open className="fixed inset-0 z-[100] m-0 grid h-full max-h-none w-full max-w-none place-items-end border-0 bg-black/75 p-3 backdrop-blur-sm sm:place-items-center" aria-label="Checkout simulado"><div className="w-full max-w-md">{panel}</div></dialog>;
+}
